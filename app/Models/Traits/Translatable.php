@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\App;
 
 trait Translatable
 {
-    protected $defaultLocale = 'ru';
+    protected $defaultLocale = 'ua';
 
     public function __($originFieldName)
     {
