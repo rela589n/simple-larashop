@@ -19,15 +19,15 @@ class CurrencySeeder extends Seeder
                 [
                     'code'       => 'UAH',
                     'symbol'     => '₴',
-                    'is_main'    => 28,
-                    'rate'       => 1,
+                    'is_main'    => 1,
+                    'rate'       => 28,
                     'updated_at' => Carbon::now(),
                     'created_at' => Carbon::now(),
                 ],
                 [
                     'code'       => 'RUB',
                     'symbol'     => '₽',
-                    'is_main'    => 1,
+                    'is_main'    => 0,
                     'rate'       => 14,
                     'updated_at' => Carbon::now(),
                     'created_at' => Carbon::now(),
