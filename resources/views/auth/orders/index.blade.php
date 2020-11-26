@@ -1,6 +1,6 @@
 @extends('auth.layouts.master')
 
-@section('title', 'Замовленняы')
+@section('title', 'Замовлення')
 
 @section('content')
     <div class="col-md-12">

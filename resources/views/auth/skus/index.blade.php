@@ -1,10 +1,10 @@
 @extends('auth.layouts.master')
 
-@section('title', 'Товарные предложения')
+@section('title', 'Товарні пропозиції')
 
 @section('content')
     <div class="col-md-12">
-        <h1>Товарные предложения</h1>
+        <h1>Товарні пропозиції</h1>
         <h2>{{ $product->name }}</h2>
         <table class="table">
             <tbody>

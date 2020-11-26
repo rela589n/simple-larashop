@@ -40,7 +40,7 @@
                         </tr>
                         @if($order->hasCoupon())
                             <tr>
-                                <td colspan="3">Был использован купон:</td>
+                                <td colspan="3">Було використано купон:</td>
                                 <td><a href="{{ route('coupons.show', $order->coupon) }}">{{ $order->coupon->code }}</a></td>
                             </tr>
                         @endif
