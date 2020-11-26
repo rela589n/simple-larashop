@@ -19,7 +19,7 @@ class CheckIsAdmin
         $user = Auth::user();
 
         if (!$user->isAdmin()) {
-            session()->flash('warning', 'У вас нет прав администратора');
+            session()->flash('warning', 'Ви повинні бути адміністратором, щоб переглядати цю сторінку');
             return redirect()->route('index');
         }
 
