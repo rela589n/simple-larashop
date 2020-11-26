@@ -30,7 +30,7 @@ class RegisterController extends Controller
             return route('home');
         } else {
             return route('person.orders.index');
-        };
+        }
     }
 
     /**
