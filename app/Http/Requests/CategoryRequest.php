@@ -39,9 +39,9 @@ class CategoryRequest extends FormRequest
     public function messages()
     {
         return [
-            'required' => 'Поле :attribute обязательно для ввода',
-            'min' => 'Поле :attribute должно иметь минимум :min символов',
-            'code.min' => 'Поле код должно содержать не менее :min символов',
+            'required' => 'Поле :attribute обов\'язково має бути заповнене',
+            'min' => 'Поле :attribute повинно мати мінімум :min символів',
+            'code.min' => 'Поле код повинно містити не менше :min символів',
         ];
     }
 }

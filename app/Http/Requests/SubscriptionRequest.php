@@ -31,7 +31,7 @@ class SubscriptionRequest extends FormRequest
     public function messages()
     {
         return [
-            'email' => 'Поле email должно содержать корректный email адрес',
+            'email' => 'Поле email повинно містити коректний email-адрес',
         ];
     }
 }
