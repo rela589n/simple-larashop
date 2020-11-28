@@ -26,7 +26,7 @@
                 @endisset
                 @csrf
                 <div class="input-group row">
-                    <label for="code" class="col-sm-2 col-form-label">Код: </label>
+                    <label for="code" class="col-sm-6 col-form-label">Код: </label>
                     <div class="col-sm-6">
                         @include('auth.layouts.error', ['fieldName' => 'code'])
                         <input type="text" class="form-control" name="code" id="code"
@@ -35,7 +35,7 @@
                 </div>
                 <br>
                 <div class="input-group row">
-                    <label for="name" class="col-sm-2 col-form-label">Назва: </label>
+                    <label for="name" class="col-sm-6 col-form-label">Назва: </label>
                     <div class="col-sm-6">
                         @include('auth.layouts.error', ['fieldName' => 'name'])
                         <input type="text" class="form-control" name="name" id="name"
@@ -44,7 +44,7 @@
                 </div>
                 <br>
                     <div class="input-group row">
-                        <label for="name" class="col-sm-2 col-form-label">Назва en: </label>
+                        <label for="name" class="col-sm-6 col-form-label">Назва en: </label>
                         <div class="col-sm-6">
                             @include('auth.layouts.error', ['fieldName' => 'name_en'])
                             <input type="text" class="form-control" name="name_en" id="name_en"
@@ -53,7 +53,7 @@
                     </div>
                     <br>
                 <div class="input-group row">
-                    <label for="category_id" class="col-sm-2 col-form-label">Категорія: </label>
+                    <label for="category_id" class="col-sm-6 col-form-label">Категорія: </label>
                     <div class="col-sm-6">
                         @include('auth.layouts.error', ['fieldName' => 'category_id'])
                         <select name="category_id" id="category_id" class="form-control">
@@ -71,7 +71,7 @@
                 </div>
                 <br>
                 <div class="input-group row">
-                    <label for="description" class="col-sm-2 col-form-label">Опис: </label>
+                    <label for="description" class="col-sm-6 col-form-label">Опис: </label>
                     <div class="col-sm-6">
                         @include('auth.layouts.error', ['fieldName' => 'description'])
                         <textarea name="description" id="description" cols="72"
@@ -80,7 +80,7 @@
                 </div>
                 <br>
                     <div class="input-group row">
-                        <label for="description" class="col-sm-2 col-form-label">Опис en: </label>
+                        <label for="description" class="col-sm-6 col-form-label">Опис en: </label>
                         <div class="col-sm-6">
                             @include('auth.layouts.error', ['fieldName' => 'description_en'])
                             <textarea name="description_en" id="description_en" cols="72"
@@ -89,7 +89,7 @@
                     </div>
                     <br>
                 <div class="input-group row">
-                    <label for="image" class="col-sm-2 col-form-label">Зображення: </label>
+                    <label for="image" class="col-sm-6 col-form-label">Зображення: </label>
                     <div class="col-sm-10">
                         <label class="btn btn-default btn-file">
                             Завантажити <input type="file" style="display: none;" name="image" id="image">
@@ -99,7 +99,7 @@
                 <br>
 
                 <div class="input-group row">
-                    <label for="category_id" class="col-sm-2 col-form-label">Властивості товара: </label>
+                    <label for="category_id" class="col-sm-6 col-form-label">Властивості товара: </label>
                     <div class="col-sm-6">
                         @include('auth.layouts.error', ['fieldName' => 'property_id[]'])
                         <select name="property_id[]" multiple>
@@ -123,7 +123,7 @@
                 'recommend' => 'Рекомендовані'
                 ] as $field => $title)
                     <div class="form-group row">
-                        <label for="code" class="col-sm-2 col-form-label">{{ $title }}: </label>
+                        <label for="code" class="col-sm-6 col-form-label">{{ $title }}: </label>
                         <div class="col-sm-10">
                             <input type="checkbox" name="{{$field}}" id="{{$field}}"
                             @if(isset($product) && $product->$field === 1)

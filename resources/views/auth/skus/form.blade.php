@@ -28,16 +28,16 @@
                 @csrf
 
                     <div class="input-group row">
-                        <label for="price" class="col-sm-2 col-form-label">Ціна: </label>
-                        <div class="col-sm-2">
+                        <label for="price" class="col-sm-6 col-form-label">Ціна: </label>
+                        <div class="col-sm-6">
                             @include('auth.layouts.error', ['fieldName' => 'price'])
                             <input type="text" class="form-control" name="price"
                                    value="@isset($skus){{ $skus->price }}@endisset">
                         </div>
                     </div>
                     <div class="input-group row">
-                        <label for="count" class="col-sm-2 col-form-label">К-сть: </label>
-                        <div class="col-sm-2">
+                        <label for="count" class="col-sm-6 col-form-label">К-сть: </label>
+                        <div class="col-sm-6">
                             @include('auth.layouts.error', ['fieldName' => 'count'])
                             <input type="text" class="form-control" name="count"
                                    value="@isset($skus){{ $skus->count }}@endisset">
@@ -47,7 +47,7 @@
 
                 @foreach ($product->properties as $property)
                     <div class="input-group row">
-                        <label for="property_id[{{ $property->id }}]" class="col-sm-2 col-form-label">{{ $property->name }}: </label>
+                        <label for="property_id[{{ $property->id }}]" class="col-sm-6 col-form-label">{{ $property->name }}: </label>
                         <div class="col-sm-6">
                             <select name="property_id[{{ $property->id }}]" class="form-control">
                                 @foreach($property->propertyOptions as $propertyOption)

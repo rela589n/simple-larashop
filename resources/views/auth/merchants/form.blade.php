@@ -27,7 +27,7 @@
                         @endisset
                         @csrf
                         <div class="input-group row">
-                            <label for="name" class="col-sm-2 col-form-label">Назва: </label>
+                            <label for="name" class="col-sm-6 col-form-label">Назва: </label>
                             <div class="col-sm-6">
                                 @error('name')
                                     <div class="alert alert-danger">{{ $message }}</div>
@@ -39,7 +39,7 @@
 
                             <br>
                             <div class="input-group row">
-                                <label for="email" class="col-sm-2 col-form-label">Email: </label>
+                                <label for="email" class="col-sm-6 col-form-label">Email: </label>
                                 <div class="col-sm-6">
                                     @error('email')
                                     <div class="alert alert-danger">{{ $message }}</div>

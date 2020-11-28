@@ -27,7 +27,7 @@
                         @endisset
                         @csrf
                         <div class="input-group row">
-                            <label for="code" class="col-sm-2 col-form-label">Код: </label>
+                            <label for="code" class="col-sm-6 col-form-label">Код: </label>
                             <div class="col-sm-6">
                                 @error('code')
                                     <div class="alert alert-danger">{{ $message }}</div>
@@ -38,7 +38,7 @@
                         </div>
                         <br>
                         <div class="input-group row">
-                            <label for="name" class="col-sm-2 col-form-label">Назва: </label>
+                            <label for="name" class="col-sm-6 col-form-label">Назва: </label>
                             <div class="col-sm-6">
                                 @error('name')
                                     <div class="alert alert-danger">{{ $message }}</div>
@@ -50,7 +50,7 @@
 
                             <br>
                             <div class="input-group row">
-                                <label for="name" class="col-sm-2 col-form-label">Назва en: </label>
+                                <label for="name" class="col-sm-6 col-form-label">Назва en: </label>
                                 <div class="col-sm-6">
                                     @error('name_en')
                                     <div class="alert alert-danger">{{ $message }}</div>
@@ -62,7 +62,7 @@
 
                             <br>
                         <div class="input-group row">
-                            <label for="description" class="col-sm-2 col-form-label">Опис: </label>
+                            <label for="description" class="col-sm-6 col-form-label">Опис: </label>
                             <div class="col-sm-6">
                                 @error('description')
                                 <div class="alert alert-danger">{{ $message }}</div>
@@ -74,7 +74,7 @@
                         <br>
 
                             <div class="input-group row">
-                                <label for="description" class="col-sm-2 col-form-label">Опис en: </label>
+                                <label for="description" class="col-sm-6 col-form-label">Опис en: </label>
                                 <div class="col-sm-6">
                                     @error('description_en')
                                     <div class="alert alert-danger">{{ $message }}</div>
@@ -86,7 +86,7 @@
                             <br>
 
                         <div class="input-group row">
-                            <label for="image" class="col-sm-2 col-form-label">Зображення: </label>
+                            <label for="image" class="col-sm-6 col-form-label">Зображення: </label>
                             <div class="col-sm-10">
                                 <label class="btn btn-default btn-file">
                                     Завантажити <input type="file" style="display: none;" name="image" id="image">
