@@ -71,12 +71,11 @@ class SkuController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  Product  $product
-     * @param  Sku  $skus
-     * @return void
+     * @param  Sku  $sku
      */
-    public function edit(Product $product, Sku $skus)
+    public function edit(Product $product, Sku $sku)
     {
-        return view('auth.skus.form', compact('product', 'skus'));
+        return view('auth.skus.form', ['product' => $product, 'sku' => $sku, 'skus' => $sku]);
     }
 
     /**
