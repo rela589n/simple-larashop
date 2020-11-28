@@ -1,10 +1,10 @@
 @extends('auth.layouts.master')
 
-@section('title', 'Вариант властивості ' . $propertyOption->name)
+@section('title', 'Варіант властивості ' . $propertyOption->name)
 
 @section('content')
     <div class="col-md-12">
-        <h1>Вариант властивості {{ $propertyOption->name }}</h1>
+        <h1>Варіант властивості {{ $propertyOption->name }}</h1>
         <table class="table">
             <tbody>
             <tr>
