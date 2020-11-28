@@ -86,12 +86,16 @@ class SkuController extends Controller
      * @param  Sku  $skus
      * @return void
      */
-    public function update(Request $request, Product $product, Sku $skus)
+    public function update(Request $request,$product, $skus)
     {
+        $product = Product::find($product);
+        $skus = Sku::find($skus);
+
         $params = $request->all();
-        $params['product_id'] = $request->product->id;
+        $params['product_id'] = $product->id;
         $skus->update($params);
-        $skus->propertyOptions()->sync($request->property_id);
+
+        $skus->propertyOptions()->sync($params['property_id']);
         return redirect()->route('skus.index', $product);
     }
 
